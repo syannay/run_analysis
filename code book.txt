@@ -1,0 +1,80 @@
+## VARIABLES
+test_x - test values
+test_y - test activity
+
+train_x - train values
+train_y - train activity
+
+feature_names - names of the features as read from file
+
+activity_labels - names if activities as read from files
+
+colnames - new ist with "activity" and "labels"
+
+combinedActivity - combined data set
+
+groupedBy <- grouped data set
+
+
+timeBodyAcc-XYZ=>standard gravity units 'g'
+timeGravityAcc-XYZ=>standard gravity units 'g'
+timeBodyAccJerk-XYZ=>standard gravity units 'g'
+timeBodyGyro-XYZ=>radians/second
+timeBodyGyroJerk-XYZ=>radians/second
+timeBodyAccMag=>standard gravity units 'g'
+timeGravityAccMag=>standard gravity units 'g'
+timeBodyAccJerkMag=>standard gravity units 'g'
+timeBodyGyroMag=>radians/second
+timeBodyGyroJerkMag=>radians/second
+FrequencyBodyAcc-XYZ
+FrequencyBodyAccJerk-XYZ
+FrequencyBodyGyro-XYZ=>radians/second
+FrequencyBodyAccMag=>standard gravity units 'g'
+FrequencyBodyAccJerkMag=>standard gravity units 'g'
+FrequencyBodyGyroMag=>radians/second
+FrequencyBodyGyroJerkMag=>radians/second
+
+
+Below a summarize of the tidydata means value:
+
+# A tibble: 6 x 81
+# Groups:   subject number [1]
+  `subject number` Activity `tBodyAcc-mean(~ `tBodyAcc-mean(~ `tBodyAcc-mean(~ `tBodyAcc-std()~ `tBodyAcc-std()~
+             <dbl> <chr>               <dbl>            <dbl>            <dbl>            <dbl>            <dbl>
+1                1 LAYING              0.222         -0.0405           -0.113           -0.928          -0.837  
+2                1 SITTING             0.261         -0.00131          -0.105           -0.977          -0.923  
+3                1 STANDING            0.279         -0.0161           -0.111           -0.996          -0.973  
+4                1 WALKING             0.277         -0.0174           -0.111           -0.284           0.114  
+5                1 WALKING~            0.289         -0.00992          -0.108            0.0300         -0.0319 
+6                1 WALKING~            0.255         -0.0240           -0.0973          -0.355          -0.00232
+
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+The complete list of variables of each feature vector is available in 'features.txt'
